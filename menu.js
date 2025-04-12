@@ -19,3 +19,39 @@ fecharMenu.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
     menu.classList.remove('abrir-menu');
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contatoForm");
+  
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+  
+        const data = new FormData(form);
+  
+        fetch("https://formsubmit.co/ajax/gomesborgesbiel@gmail.com", {
+          method: "POST",
+          headers: {
+            "Accept": "application/json"
+          },
+          body: data
+        })
+        .then(response => {
+          if (response.ok) {
+            alert("E-mail enviado com sucesso!");
+            form.reset();
+          } else {
+            alert("Houve um erro ao enviar o e-mail.");
+          }
+        })
+        .catch(error => {
+          console.error("Erro:", error);
+          alert("Erro na requisição.");
+        });
+      });
+    }
+  });
+  
+  
