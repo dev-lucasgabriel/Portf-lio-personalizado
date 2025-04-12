@@ -97,6 +97,7 @@ header nav.menu-desktop ul li {
 .menu-abrir .icon-list{
   color: #00ff08;
   font-size: 40px;
+  cursor: pointer;
 }
 
 .overlay-menu{
@@ -118,7 +119,7 @@ header nav.menu-desktop ul li {
   top: 0;
   right: 0;
   z-index: 99999;
-  width: 50%;
+  width: 0;
   overflow: hidden ;
   transition: .5s;
 }
@@ -154,6 +155,7 @@ header nav.menu-desktop ul li {
 .menu-mobile .menu-fechar .icon-close{
   color: #00ff08;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .menu-mobile .menu-fechar{
@@ -346,22 +348,25 @@ section.portfolio .flex {
   opacity: 1;
 }
 
-.flex .icon-github {
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-github a {
   color: #fff;
   font-size: 40px;
-  align-items: center;
-
-  justify-content: space-around;
+  transition: 0.3s;
 }
 
-.icon-github:hover {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
+.icon-github a:hover {
+  color: #00ff08;
+  transform: scale(1.1);
 }
+
 /*------------------------------------------------------------------------*/
 /*ESTILO FORMULARIO*/
 
@@ -456,6 +461,8 @@ footer .line-footer {
   }
   /*CABEÇALHO*/
 
+
+
   .menu-desktop,
   .contato {
     display: none;
@@ -498,6 +505,7 @@ footer .line-footer {
 
   .social {
     text-align: center;
+  
   }
 
   .img-sobre img {
