@@ -31,13 +31,20 @@ document.addEventListener("DOMContentLoaded", function () {
   
         const data = new FormData(form);
   
-        fetch("https://formsubmit.co/ajax/gomesborgesbiel@gmail.com", {
+        fetch("https://hook.us2.make.com/b2hj8om1gwtbzmlsbm994kmdklh3aplr", {
           method: "POST",
           headers: {
             "Accept": "application/json"
           },
           body: data
         })
+        // fetch("https://formsubmit.co/ajax/gomesborgesbiel@gmail.com", {
+        //   method: "POST",
+        //   headers: {
+        //     "Accept": "application/json"
+        //   },
+        //   body: data
+        // })
         .then(response => {
           if (response.ok) {
             alert("E-mail enviado com sucesso!");
