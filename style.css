@@ -617,13 +617,6 @@ footer .line-footer {
     padding: 80px 8%;
   }
 
-  .img-port {
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
-    
-  }
-
   section.portfolio .flex {
     gap: 60px;
   }
@@ -651,13 +644,34 @@ footer .line-footer {
 
 /*AUTOPROCS*/
 
-section.autoprocs .img-port {
-  width: 90%;
-  max-width: 360px;
-  height: auto;
-  aspect-ratio: 9 / 11;
-  background-size: cover;
-  background-position: center;
+.autoprocs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.autoprocs .content {
+  max-width: 100%;
+}
+
+.autoprocs .item {
+  display: block;
+  margin: 10px 0;
+}
+
+.autoprocs .item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.autoprocs h2 {
+  font-size: 28px; /* Tamanho do título similar ao da seção portfolio */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
 /*-----------------------------------------------------------------------*/
 
