@@ -28,7 +28,7 @@ body {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600px;
-  background-color: #00ff08;
+  background-color: #fff;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -42,16 +42,20 @@ h2.titulo {
 }
 
 h2.titulo span {
-  color: #00ff08;
+  color: #C0C0C0;
+  font-weight: 800; /* ou bold */
 }
+
 
 button:hover,
 form .enviar input:hover {
-  box-shadow: 0px 0px 8px #00ff0868;
+  box-shadow: 0px 0px 8px #fff;
   transform: scale(1.05);
 }
 /*----------------------------------------------------------------------*/
 /* ESTILO CABEÇALHO */
+
+
 
 .txt-topo-site p {
   text-align: justify;
@@ -68,7 +72,7 @@ header > .interface {
 }
 
 header a {
-  color: #7d7d7d;
+  color: #C0C0C0 !important;
   text-decoration: none;
   display: inline-block;
   transition: 0.2s;
@@ -89,13 +93,13 @@ header nav.menu-desktop ul li {
 }
 
 .icon-briefcase {
-  color: #00ff08;
+  color: #fff;
   font-size: 90px;
 }
 /*----------------------------------------------------------------------*/
 /*ESTILO DO MENU MOBILE*/
 .menu-abrir .icon-list{
-  color: #00ff08;
+  color: #fff;
   font-size: 40px;
   cursor: pointer;
 }
@@ -146,14 +150,14 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul  li a:hover{
-  background-color: #00ff08 ;
+  background-color: #fff ;
   color: #000;
   border-radius: 50px ;
   transition: 0.2s;
 }
 
 .menu-mobile .menu-fechar .icon-close{
-  color: #00ff08;
+  color: #fff;
   font-size: 30px;
   cursor: pointer;
 }
@@ -217,6 +221,12 @@ section.especialidades .flex {
   gap: 60px;
 }
 
+h2.titulo span {
+  color: #C0C0C0 !important;
+  font-weight: 800;
+}
+
+
 .especialidades .especialidades-box {
   color: #fff;
   padding: 40px;
@@ -276,7 +286,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-  color: #00ff08;
+  color: #C0C0C0;
   display: block;
 }
 
@@ -290,7 +300,7 @@ section.sobre .flex {
   height: 50px;
   border-radius: 50%;
   border: none;
-  background-color: #00ff08;
+  background-color: #fff;
   font-size: 22px;
   cursor: pointer;
   margin: 0 5px;
@@ -363,7 +373,95 @@ section.portfolio .flex {
 }
 
 .icon-github a:hover {
-  color: #00ff08;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+
+
+/*ESTILO AUTOPROCS--------------------------------------------------------*/
+section.autoprocs {
+  padding: 80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff3e;
+}
+
+section.autoprocs .flex {
+  justify-content: space-around;
+  margin: 60px;
+}
+
+section.autoprocs h2.titulo span{
+  color: #3B82F6 !important;
+}
+
+section.autoprocs h2.icon-bot {
+  color: #3B82F6 !important;
+}
+
+
+.img-port {
+  width: 360px;
+  height: 460px;
+  background-size: cover;
+  cursor: pointer;
+  background-position: 100% 0%;
+  transition: 5s;
+  border-radius: 40px;
+  position: relative;
+  align-items: center;
+}
+
+.img-port:hover {
+  background-position: 100% 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b8;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+.overlay-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.empresa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-bot a {
+  color: #fff;
+  font-size: 60px;
+  transition: 0.3s;
+}
+
+.icon-bot a:hover {
+  color: #3B82F6;
   transform: scale(1.1);
 }
 
@@ -407,7 +505,7 @@ form .enviar {
 
 form .enviar input {
   width: 120px;
-  background-color: #00ff08;
+  background-color: #fff;
   color: #000;
   font-weight: 700;
   cursor: pointer;
@@ -417,7 +515,7 @@ form .enviar input {
 
 .icon-email {
   font-size: 22px;
-  color: #00ff08;
+  color: #fff;
 }
 
 footer {
@@ -426,7 +524,7 @@ footer {
 }
 
 .icon-briefcase {
-  color: #00ff08;
+  color: #fff;
   font-size: 70px;
 }
 footer .flex {
@@ -442,7 +540,7 @@ footer .line-footer {
 }
 
 .borda {
-  border-bottom: 2px solid #00ff08;
+  border-bottom: 2px solid #fff;
   padding: 15px;
 }
 /*----------------------------------------------------------------------*/
@@ -474,6 +572,8 @@ footer .line-footer {
     text-align: center;
     font-size: 34px;
   }
+
+  
 
   section.topo-do-site {
     padding: 20px 14%;
@@ -521,6 +621,7 @@ footer .line-footer {
     width: 100%;
     max-width: 360px;
     margin: 0 auto;
+    
   }
 
   section.portfolio .flex {
@@ -534,6 +635,7 @@ footer .line-footer {
 
   #icons {
     flex-direction: row;
+    background-color:#fff;
   }
 }
 
@@ -546,4 +648,16 @@ footer .flex{
 footer .line-footer {
   text-align: center;
 }
+
+/*AUTOPROCS*/
+
+section.autoprocs .img-port {
+  width: 90%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 9 / 11;
+  background-size: cover;
+  background-position: center;
+}
 /*-----------------------------------------------------------------------*/
+
