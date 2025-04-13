@@ -546,132 +546,40 @@ footer .line-footer {
 /*----------------------------------------------------------------------*/
 /*RESPONSIVO*/
 
-@media screen and (max-width: 1020px) {
-  /*GERAL*/
+@media screen and (max-width: 1020px){
+ /*classes gerais*/
+ .flex{
+  flex-direction: column;
+ }
 
-  .flex {
-    flex-direction: column-reverse;
-  }
-
-  h2.titulo {
-    font-size: 34px;
-    line-height: 30px;
-  }
-  /*CABEÇALHO*/
-
-
-
-  .menu-desktop,
-  .contato {
+ .topo-do-site .flex{
+  flex-direction: column-reverse;
+ }
+ 
+ h2.titulo{
+  font-size: 34px;
+  line-height: 30px;
+ }
+ 
+ 
+  /*cabeçalho*/
+  .menu-desktop, .contato{
     display: none;
   }
 
-  /*TOPO DO SITE*/
-  .topo-do-site h1 {
-    line-height: 30px;
-    text-align: center;
-    font-size: 34px;
-  }
-
-  
-
-  section.topo-do-site {
-    padding: 20px 14%;
-  }
-  .topo-do-site h1 {
-    font-size: 30px;
-  }
-
-  .topo-do-site .img-topo-site img {
+  .topo-do-site .img-topo-site img{
     width: 100%;
   }
 
-  /*ESPECIALIDADES*/
-  section.especialidades {
-    padding: 40px 14%;
+  .autoprocs .img-port{
+    width: 115%;
   }
 
-  /*ESTILO SOBRE*/
-
-  section.sobre {
-    padding: 40px 14%;
+  footer .flex{
+    flex-direction: column;
   }
 
-  .sobre .txt-sobre h2 {
-    line-height: 30px;
+  footer .line-footer{
     text-align: center;
-    font-size: 34px;
-  }
-
-  .social {
-    text-align: center;
-  
-  }
-
-  .img-sobre img {
-    width: 100%;
-  }
-
-  /*PORTFÓLIO*/
-  section.portoflio {
-    padding: 80px 8%;
-  }
-
-  section.portfolio .flex {
-    gap: 60px;
-  }
-
-  .flex .icon-github, .flex .align-link  {
-    text-align: center;
-    align-self: center;
-  }
-
-  #icons {
-    flex-direction: row;
-    background-color:#fff;
-  }
+    
 }
-
-/*RODAPÉ*/
-footer .flex{
-  flex-direction: column;
-  gap: 30px;
-}
-
-footer .line-footer {
-  text-align: center;
-}
-
-/*AUTOPROCS*/
-
-.autoprocs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.autoprocs .content {
-  max-width: 100%;
-}
-
-.autoprocs .item {
-  display: block;
-  margin: 10px 0;
-}
-
-.autoprocs .item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.autoprocs h2 {
-  font-size: 28px; /* Tamanho do título similar ao da seção portfolio */
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  
-}
-
-/*-----------------------------------------------------------------------*/
-
