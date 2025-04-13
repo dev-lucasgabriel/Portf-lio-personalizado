@@ -552,7 +552,7 @@ footer .line-footer {
   flex-direction: column;
  }
 
- .topo-do-site .flex{
+ .topo-do-site .flex {
   flex-direction: column-reverse;
  }
  
@@ -571,8 +571,72 @@ footer .line-footer {
     width: 100%;
   }
 
+  section.topo-do-site{
+    padding: 20px 8%;
+  }
+
+  .topo-do-site h1{
+    font-size: 30px;
+  }
+
+  section.topo-do-site .flex{
+    gap: 40px;
+  }
+
+  /*----------------*/
+
+  section.especialidades{
+padding: 40px 8%;
+  }
+
+ 
+
+section.sobre{
+padding: 80px 8%;
+}
+
+.sobre .txt-sobre h2{
+font-size: 34px;
+line-height: 35px;
+text-align: center;
+}
+
+.social{
+  text-align: center;
+}
+
+img-sobre img{
+ width: 100%;
+}
+
+/*---------------*/
+
+section.portfolio{
+  padding: 80px 8%;
+}
+
+.img-port{
+  width: 100%;
+max-width: 360px;
+margin: 0 auto;
+
+}
+
+section.portfolio .flex{
+gap: 60px;
+}
+
+section.autoprocs .flex{
+gap: 60px;
+}
+
+
+
   .autoprocs .img-port{
-    width: 115%;
+    width: 145%;
+    max-width: 390px;
+    margin: 0 auto;
+    margin-left: -40px; 
   }
 
   footer .flex{
